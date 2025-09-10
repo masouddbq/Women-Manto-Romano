@@ -1,0 +1,49 @@
+.card-container {
+    perspective: 1000px;
+}
+
+.rotate-3d {
+    transform: rotateX(15deg);
+    transform-style: preserve-3d;
+}
+
+.rotate-3d-img {
+    opacity: 0.3;
+    transform: translateZ(-20px);
+}
+
+.spirit-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateZ(0px) scale(1);
+    z-index: 10;
+    pointer-events: none;
+}
+
+.spirit-float {
+    opacity: 0.9 !important;
+    transform: translateZ(50px) translateY(-30px) scale(1.1) !important;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+    animation: spiritFloat 1.5s ease-out forwards;
+}
+
+@keyframes spiritFloat {
+    0% {
+        opacity: 0;
+        transform: translateZ(0px) translateY(0px) scale(1);
+    }
+    30% {
+        opacity: 0.7;
+        transform: translateZ(30px) translateY(-15px) scale(1.05);
+    }
+    70% {
+        opacity: 0.9;
+        transform: translateZ(50px) translateY(-30px) scale(1.1);
+    }
+    100% {
+        opacity: 0.9;
+        transform: translateZ(50px) translateY(-30px) scale(1.1);
+    }
+}
