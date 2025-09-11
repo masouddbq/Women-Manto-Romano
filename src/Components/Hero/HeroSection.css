@@ -1,49 +1,61 @@
-.card-container {
-    perspective: 1000px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.rotate-3d {
-    transform: rotateX(15deg);
-    transform-style: preserve-3d;
+.rotate-y{
+    transform: rotate3d(0,1,0,0deg);
+    box-shadow: 0 0 10px 4px rgba(126, 126, 126, 0.4);
+    filter: grayscale(100%);
+    transition: 0.5s ease;
 }
 
-.rotate-3d-img {
-    opacity: 0.3;
-    transform: translateZ(-20px);
+.rotate-y:hover{
+    transform: rotateY(20deg);
+    box-shadow: 0 0 10px 1px rgba(126, 126, 126, 0.5);
+    filter: grayscale(20%);
+    scale: 1.1;
+    transform: translateY(40px);
 }
 
-.spirit-image {
+/* Navigation menu styling */
+.nav-menu-item {
+    position: relative;
+    padding: 8px 16px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.nav-menu-item::before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0;
-    transform: translateZ(0px) scale(1);
-    z-index: 10;
-    pointer-events: none;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(255, 215, 0, 0.1), rgba(255, 255, 255, 0.1));
+    transition: width 0.3s ease;
+    border-radius: 4px;
+    z-index: -1;
 }
 
-.spirit-float {
-    opacity: 0.9 !important;
-    transform: translateZ(50px) translateY(-30px) scale(1.1) !important;
-    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
-    animation: spiritFloat 1.5s ease-out forwards;
+.nav-menu-item:hover::before {
+    width: 100%;
 }
 
-@keyframes spiritFloat {
-    0% {
-        opacity: 0;
-        transform: translateZ(0px) translateY(0px) scale(1);
-    }
-    30% {
-        opacity: 0.7;
-        transform: translateZ(30px) translateY(-15px) scale(1.05);
-    }
-    70% {
-        opacity: 0.9;
-        transform: translateZ(50px) translateY(-30px) scale(1.1);
-    }
-    100% {
-        opacity: 0.9;
-        transform: translateZ(50px) translateY(-30px) scale(1.1);
-    }
+.nav-menu-item:hover {
+    transform: translateX(-5px);
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+    color: #ffd700 !important;
+}
+
+/* White line styling */
+.white-line {
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+    height: 1px;
+    width: 100%;
+    margin: 10px 0;
 }

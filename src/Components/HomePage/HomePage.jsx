@@ -4,10 +4,9 @@ import HeroSection from '../Hero/HeroSection'
 
 const HomePage = () => {
   return (
-   <>
-     <Navbar />
+   <div className='w-full h-full'>
      <HeroSection />
-   </>
+   </div>
   )
 }
 
