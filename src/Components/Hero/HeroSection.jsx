@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import "./HeroSection.css";
 import heroImage from "/1.jpg";
 import Navbar from "../Navbar/Navbar";
-import HeroCircles from "./HeroCircles";
+import SideTapes from "./SideTapes";
+
 
 const HeroSection = () => {
   return (
@@ -15,7 +16,7 @@ const HeroSection = () => {
           alt=""
         />
       </div>
-      <HeroCircles />
+      <SideTapes />
     </div>
   );
 };
