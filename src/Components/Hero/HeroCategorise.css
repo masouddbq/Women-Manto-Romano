@@ -7,11 +7,11 @@
     transition: 0.5s ease;
 }
 .hover-img:hover{
-    background-image: url('/3.jpg'); /* یا هر عکس دیگری که می‌خواهی */
+    background-image: url('/3.jpg');
     background-size: cover;
-    opacity: 0.6;
     background-position: center;
     background-repeat: no-repeat;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
 }
 .hover-img2{
     background-image:none;
@@ -22,11 +22,11 @@
     transition: 0.5s ease;
 }
 .hover-img2:hover{
-    background-image: url('/1.jpg'); /* یا هر عکس دیگری که می‌خواهی */
+    background-image: url('/1.jpg');
     background-size: cover;
-    opacity: 0.6;
     background-position: center;
     background-repeat: no-repeat;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
 }
 .hover-img3{
     background-image:none;
@@ -37,9 +37,9 @@
     transition: 0.5s ease;
 }
 .hover-img3:hover{
-    background-image: url('/4.jpg'); /* یا هر عکس دیگری که می‌خواهی */
+    background-image: url('/4.jpg');
     background-size: cover;
-    opacity: 0.6;
     background-position: center;
     background-repeat: no-repeat;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
 }

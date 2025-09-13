@@ -13,5 +13,6 @@ body{
     font-family: 'pinar';
     background-color: #000000;
     overflow-x: hidden;
+    direction: rtl;
 }
 
