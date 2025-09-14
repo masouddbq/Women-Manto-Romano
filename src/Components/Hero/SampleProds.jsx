@@ -2,7 +2,7 @@ import React from 'react'
 
 const SampleProds = () => {
   return (
-    <div className='w-full bg-black py-20 px-8'>
+    <div className='w-full bg-black py-4 px-8'>
       <div className='max-w-7xl mx-auto'>
         {/* عنوان بخش */}
         <div className='text-center mb-16'>

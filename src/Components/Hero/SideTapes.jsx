@@ -4,7 +4,7 @@ import HeroCategories from "./HeroCategories";
 
 const SideTapes = () => {
   return (
-    <div className="absolute top-10 left-20 w-full h-full">
+    <div className="absolute top-20 left-20 z-50 w-full h-full">
       <div className="flex relative flex-row justify-between items-center">
         <div className="flex z-50 absolute top-10 -left-24 flex-col justify-center items-center">
           <Link to="/">

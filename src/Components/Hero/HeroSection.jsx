@@ -5,6 +5,7 @@ import Navbar from "../Navbar/Navbar";
 import SideTapes from "./SideTapes";
 import BlurText from "./BlurText";
 import SampleProds from "./SampleProds";
+import RopeCategory from "./RopeCategory";
 
 
 const HeroSection = () => {
@@ -26,12 +27,13 @@ const HeroSection = () => {
        <div className="absolute inset-0 flex items-center justify-center">
           <BlurText 
             text="چه استایلی میخوای؟" 
-            className="text-white text-4xl md:mt-8 mt-32 font-bold text-center"
+            className="text-white text-4xl md:mt-8 mt-80 font-bold text-center"
             direction="top"
             delay={850}
             animateBy="words"
           />
         </div>
+        <RopeCategory />
         <SampleProds />
     </div>
   );
